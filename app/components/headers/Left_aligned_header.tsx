@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '~/utils/landing_page_vector.svg'
+import SearchBar from '../inputForms/search_bar'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -31,7 +32,9 @@ export default function Header5() {
             </a>
           ))}
         </div>
+        <SearchBar />
       </div>
+      
       {/* Mobile menu button (visible on small screens) */}
       <div className="flex lg:hidden border-2 border-red-500">
         <button
