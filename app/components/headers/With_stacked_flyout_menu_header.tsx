@@ -39,10 +39,10 @@ export default function Header1() {
   return (
     <header className="bg-white">
       {/* Main navigation bar */}
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-2 gap-10" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8  gap-10" aria-label="Global">
         
         {/* Your Company logo */}
-        <div className="flex lg:flex-1 border-2">
+        <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
@@ -62,7 +62,7 @@ export default function Header1() {
         </div>
 
         {/* Product and navigation links on larger screens */}
-        <div className='border-2'>
+        <div className=''>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
             {/* Product dropdown menu */}
             <Popover className="relative">
@@ -134,7 +134,7 @@ export default function Header1() {
         </div>
         
         {/* Log in link on larger screens */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end border-2">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>

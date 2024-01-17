@@ -5,20 +5,18 @@ import logo from '~/utils/landing_page_vector.svg'
 import SearchBar from '../inputForms/search_bar'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Explore', href: '#' },
+  { name: 'Dashboard', href: '#' },
 ]
 
 export default function Header5() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white border-b-2 border-gray-300">
+    <header className="bg-white ">
     <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       {/* Company logo and Navigation Links Container */}
-      <div className="flex items-center gap-x-12 border-2 border-blue-500 -ml-20">
+      <div className="flex items-center gap-x-12  -ml-20">
         {/* Your Company logo */}
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
@@ -47,7 +45,7 @@ export default function Header5() {
         </button>
       </div>
       {/* Log in link (hidden on small screens) */}
-      <div className="hidden lg:flex border-2 border-green-500">
+      <div className="hidden lg:flex">
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
           Log in <span aria-hidden="true">&rarr;</span>
         </a>

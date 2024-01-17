@@ -1,5 +1,5 @@
 
-import { BarsArrowUpIcon, UsersIcon } from '@heroicons/react/20/solid'
+import { BarsArrowUpIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 
 export default function SearchBar() {
 return (
@@ -8,10 +8,6 @@ return (
     <div className="mt-2 flex rounded-md shadow-sm">
       {/* Search input container */}
       <div className="relative flex flex-grow items-stretch focus-within:z-10">
-        {/* Icon to the left of the input */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-          <UsersIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-        </div>
         {/* Search input */}
         <input
           type="email"
@@ -24,11 +20,12 @@ return (
       {/* Sort button */}
       <button
         type="button"
-        className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+        className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 bg-blue-600 hover:bg-blue-800"
       >
         {/* Icon to the left of the button text */}
-        <BarsArrowUpIcon className="-ml-0.5 h-5 w-5 text-gray-400" aria-hidden="true" />
-        Sort
+        {/* <BarsArrowUpIcon className="-ml-0.5 h-5 w-5 text-gray-400" aria-hidden="true" /> */}
+        <MagnifyingGlassIcon className="-ml-0.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+        {/* Button text */}
       </button>
     </div>
   </div>
